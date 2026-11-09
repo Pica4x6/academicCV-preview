@@ -1,0 +1,10 @@
+@article{Arshad2023,
+ abstract = { Attribute-Based Encryption (ABE) is a cryptographic mechanism that provides fine-grained access control to encrypted data, which can thus be stored in, e.g., public clouds. However, ABE schemes lack the notion of obligations, which is common in Attribute-Based Access Control systems such as eXtensible Access Control Markup Language and Usage Control. Obligations are used to define and enforce extra constraints that happen before approving or denying an access request. In this paper, we propose Attribute-Based Encryption with enforceable OBligations (OB-ABE), a system for extending any classical ABE with enforceable obligations. Our system architecture has as core component trusted hardware enclaves, implemented with Intel Software Guard Extensions (SGX), used for enforcing obligations. We employ ProVerif to formally model OB- ABE and verify its main property called “enforceable obligations”, i.e., if a message is encrypted along with an obligation, then the message can be decrypted only after enforcing the attached obligation. OB-ABE has two more properties: (i) OB-ABE is a “conservative extension” of the underlying ABE scheme, preserving its security properties; (ii) OB-ABE is “backward compatible” in the sense that any ciphertext produced by an ABE scheme can be decrypted by its extended OB- ABE version, and moreover, a ciphertext produced by an OB-ABE scheme can be decrypted by its underlying ABE scheme provided that the ciphertext does not have obligations attached. We also implement in C using Intel SGX a prototype of an OB-ABE extending the well-known Ciphertext-Policy ABE. },
+ author = {Arshad, Hamed and Picazo-Sanchez, Pablo and Johansen, Christian and Schneider, Gerardo},
+ doi = {10.1007/s13389-023-00317-1},
+ journal = {Journal of Cryptographic Engineering},
+ publisher = {Springer Science and Business Media LLC},
+ title = {Attribute-Based Encryption with Enforceable Obligations},
+ url = {https://doi.org/10.1007/s13389-023-00317-1},
+ year = {2023}
+}
